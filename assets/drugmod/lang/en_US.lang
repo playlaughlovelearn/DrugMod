@@ -1,0 +1,9 @@
+tile.cropCoca.name=Coca Plant
+tile.hotWater.name=Boiling Water
+item.seedCoca.name=Coca Seeds
+item.bucketHotWater.name=Boiling Water Bucket
+item.leafCoca.name=Coca Leaves
+itemGroup.drugTab=Drug Mod
+potion.waterHot=Boiled Alive
+tile.extractorChemicalIdle.name=Chemical Extractor
+container.chemicalextractor=Chemical Extractor
