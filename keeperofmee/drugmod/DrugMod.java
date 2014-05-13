@@ -1,6 +1,5 @@
 package keeperofmee.drugmod;
 
-import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
@@ -111,58 +110,31 @@ public class DrugMod {
         	System.err.println(e);
         	}
         	}
+        	
+        	Register.addTileEntityRegistrations();
+        	
+        	Register.addEventRegistrations();
+    		NetworkRegistry.INSTANCE.registerGuiHandler( this, new GuiHandler());
 
+        	Register.addNetworkRegistrations();
         	
-        	
-        	//Register Tileentities
-    	    GameRegistry.registerTileEntity(TileEntityChemicalExtractor.class, "Chemical Extractor");
+    		Definer.addFluidDefinitions();
     		
-        	//Registers1 <<
-        	MinecraftForge.EVENT_BUS.register(new DrugModEventHooks());
-    		NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
-    		
-        	//Fluids
-        	HotWaterFluid = new Fluid("hotwater").setTemperature(373).setViscosity(1200);
-        	FluidRegistry.registerFluid(HotWaterFluid);
-        	        	
-        	//Blocks
-        	CocaCrop = new DmCocaCrop().setBlockName("cocaCrop");
-        	HotWaterBlock = new DmHotWater().setBlockName("hotWater");
-        	ChemicalExtractorIdle = new DmChemicalExtractor(false).setBlockName("extractorChemicalIdle").setHardness(3.5F).setCreativeTab(drugTab); 
-    		ChemicalExtractorActive = new DmChemicalExtractor(true).setBlockName("extractorChemicalActive").setHardness(3.5F).setLightLevel(0.9F);
-
+        	Register.addFluidRegistrations();
         	
-        	//Items
-        	CocaSeeds = new ItemSeeds(CocaCrop, Blocks.farmland).setTextureName(modid + ":" + "seedCoca").setUnlocalizedName("seedCoca").setCreativeTab(drugTab);
-        	CocaLeaf = new DmCocaLeaf("leafCoca");
-        	HotWaterBucket = new DmHotWaterBucket(HotWaterBlock).setTextureName(DrugMod.modid + ":" + "bucketHotWater");
+        	Definer.addBlockDefinitions();
         	
-        	//FluidContainer
-        	FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack("hotwater", FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(HotWaterBucket), new ItemStack(Items.bucket));
+        	Definer.addItemDefinitions();
+        	
+        	Definer.addPotionDefinitions();
+        	
         	BucketHandler.INSTANCE.buckets.put(HotWaterBlock, HotWaterBucket);
-        	MinecraftForge.EVENT_BUS.register(BucketHandler.INSTANCE);
 
-        	//Potion Effect
-        	waterHot = (new PotionDrugMod(32, true, 0)).setIconIndex(1,1).setPotionName("potion.waterHot");
-        	
-        	//Register Blocks
-        	GameRegistry.registerBlock(CocaCrop, "CocaCrop");
-        	GameRegistry.registerBlock(HotWaterBlock, "HotWaterBlock");
-    		GameRegistry.registerBlock(ChemicalExtractorIdle, "ChemicalExtractorIdle");
-    		GameRegistry.registerBlock(ChemicalExtractorActive, "ChemicalExtractorActive");
-    		
-        	
-        	//Register Items
-        	GameRegistry.registerItem(CocaSeeds , "CocaSeeds");
-        	GameRegistry.registerItem(CocaLeaf , "CocaLeaf");
-        	GameRegistry.registerItem(HotWaterBucket , "HotWaterBucket");
-    		
-
-
-
-        	
         	MinecraftForge.addGrassSeed(new ItemStack(CocaSeeds), 10);
-
+        	
+        	Register.addBlockRegistrations();
+        	
+        	Register.addItemRegistrations();
 	
         	
         }
@@ -173,15 +145,7 @@ public class DrugMod {
                 proxy.registerRenderers();
                 
 
-        }
-        
-        @EventHandler
-        public void postInit(FMLPostInitializationEvent event) {
-                // Stub Method
-        }
-        
-
-        
+        }      
 
 }
 
