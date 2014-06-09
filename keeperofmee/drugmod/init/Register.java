@@ -1,8 +1,9 @@
-package keeperofmee.drugmod;
+package keeperofmee.drugmod.init;
 
 import keeperofmee.drugmod.handlers.BucketHandler;
 import keeperofmee.drugmod.handlers.GuiHandler;
 import keeperofmee.drugmod.hooks.DrugModEventHooks;
+import keeperofmee.drugmod.main.DrugMod;
 import keeperofmee.drugmod.tileentities.TileEntityChemicalExtractor;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;

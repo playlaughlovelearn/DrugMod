@@ -1,6 +1,6 @@
 package keeperofmee.drugmod.hooks;
 
-import keeperofmee.drugmod.DrugMod;
+import keeperofmee.drugmod.main.DrugMod;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.IIcon;
 import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;

@@ -1,7 +1,7 @@
 package keeperofmee.drugmod.gui;
 
-import keeperofmee.drugmod.DrugMod;
 import keeperofmee.drugmod.containers.ContainerChemicalExtractor;
+import keeperofmee.drugmod.main.DrugMod;
 import keeperofmee.drugmod.tileentities.TileEntityChemicalExtractor;
 
 import org.lwjgl.opengl.GL11;

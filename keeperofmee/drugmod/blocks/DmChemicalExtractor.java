@@ -6,7 +6,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
-import keeperofmee.drugmod.DrugMod;
+import keeperofmee.drugmod.main.DrugMod;
 import keeperofmee.drugmod.tileentities.TileEntityChemicalExtractor;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;

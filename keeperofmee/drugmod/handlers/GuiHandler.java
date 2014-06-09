@@ -1,8 +1,8 @@
 package keeperofmee.drugmod.handlers;
 
-import keeperofmee.drugmod.DrugMod;
 import keeperofmee.drugmod.containers.ContainerChemicalExtractor;
 import keeperofmee.drugmod.gui.GuiChemicalExtractor;
+import keeperofmee.drugmod.main.DrugMod;
 import keeperofmee.drugmod.tileentities.TileEntityChemicalExtractor;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;

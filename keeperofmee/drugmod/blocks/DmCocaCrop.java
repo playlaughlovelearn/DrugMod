@@ -2,7 +2,7 @@ package keeperofmee.drugmod.blocks;
 
 import java.util.Random;
 
-import keeperofmee.drugmod.DrugMod;
+import keeperofmee.drugmod.main.DrugMod;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockCrops;

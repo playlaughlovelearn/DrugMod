@@ -1,4 +1,4 @@
-package keeperofmee.drugmod;
+package keeperofmee.drugmod.init;
 
 import keeperofmee.drugmod.blocks.DmChemicalExtractor;
 import keeperofmee.drugmod.blocks.DmCocaCrop;
@@ -6,6 +6,7 @@ import keeperofmee.drugmod.blocks.DmHotWater;
 import keeperofmee.drugmod.effects.PotionDrugMod;
 import keeperofmee.drugmod.items.DmCocaLeaf;
 import keeperofmee.drugmod.items.DmHotWaterBucket;
+import keeperofmee.drugmod.main.DrugMod;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemSeeds;
 import net.minecraftforge.fluids.Fluid;

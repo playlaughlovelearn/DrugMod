@@ -1,7 +1,7 @@
 package keeperofmee.drugmod.tileentities;
 
-import keeperofmee.drugmod.DrugMod;
 import keeperofmee.drugmod.blocks.DmChemicalExtractor;
+import keeperofmee.drugmod.main.DrugMod;
 import keeperofmee.drugmod.recipes.ChemicalExtractorRecipes;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

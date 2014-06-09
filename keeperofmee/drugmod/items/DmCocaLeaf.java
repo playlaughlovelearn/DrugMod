@@ -1,6 +1,6 @@
 package keeperofmee.drugmod.items;
 
-import keeperofmee.drugmod.DrugMod;
+import keeperofmee.drugmod.main.DrugMod;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 

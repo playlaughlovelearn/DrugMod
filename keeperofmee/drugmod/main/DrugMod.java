@@ -1,4 +1,4 @@
-package keeperofmee.drugmod;
+package keeperofmee.drugmod.main;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
@@ -10,6 +10,8 @@ import keeperofmee.drugmod.effects.PotionDrugMod;
 import keeperofmee.drugmod.handlers.BucketHandler;
 import keeperofmee.drugmod.handlers.GuiHandler;
 import keeperofmee.drugmod.hooks.DrugModEventHooks;
+import keeperofmee.drugmod.init.Definer;
+import keeperofmee.drugmod.init.Register;
 import keeperofmee.drugmod.items.DmCocaLeaf;
 import keeperofmee.drugmod.items.DmHotWaterBucket;
 import keeperofmee.drugmod.proxy.CommonProxy;
